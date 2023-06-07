@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIT JEJU</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./img/favicon.png">
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- 헤더영역 -->
+        <header id="hd" class="hd">
+            <h1>
+                <a href="./index.html">
+                    <img src="./img/logoWhite.png" alt="메인로고" class="logoWhite">
+                    <img src="./img/logoBlack.png" alt="메인로고" class="logoBlack">
+                </a>
+            </h1>
+            <!-- 메안메뉴-->
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <span class="mainmenu">여행지</span>
+                        <ul class="submenu" onmouseover="position()">
+                            <li><a href="#">관광지</a></li>
+                            <li><a href="./프론트 프로젝트/index.html">음식</a></li>
+                            <li><a href="./stay.html">숙박</a></li>
+                            <li><a href="#">쇼핑</a></li>
+                            <li><a href="./festival.html">축제와 행사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="mainmenu">추천</span>
+                        <ul class="submenu">
+                            <li><a href="#">테마지도</a></li>
+                            <li><a href="#">테마여행</a></li>
+                            <li><a href="#">반려동물동반여행</a></li>
+                            <li><a href="#">여행 큐레이션</a></li>
+                            <li><a href="#">일정 추천</a></li>
+                            <li><a href="#">슬로우로드</a></li>
+                            <li><a href="#">관광지혼잡도</a></li>
+                            <li><a href="#">제주문화공연</a></li>
+                            <li><a href="#">관광기념품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="mainmenu">쇼핑</span>
+                        <ul class="submenu">
+                            <li><a href="#">면세점</a></li>
+                            <li><a href="#">탐나오</a></li>
+                            <li><a href="#">이제주몰</a></li>
+                            <li><a href="#">Deals</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="mainmenu">브랜드</span>
+                        <ul class="submenu">
+                            <li><a href="#">유네스코</a></li>
+                            <li><a href="#">웰니스</a></li>
+                            <li><a href="#">같이가치</a></li>
+                            <li><a href="#">카름스테이</a></li>
+                            <li><a href="#">우수관광사업체</a></li>
+                            <li><a href="#">착한가격업소</a></li>
+                            <li><a href="#">지오브랜드</a></li>
+                            <li><a href="#">JTO X 제주지니</a></li>
+                        </ul>
+                    <li>
+                        <span class="mainmenu">여행정보</span>
+                        <ul class="submenu">
+                            <li><a href="#">문화·역사·예술</a></li>
+                            <li><a href="#">영상 속 제주</a></li>
+                            <li><a href="#">VR로 보는 제주</a></li>
+                            <li><a href="#">안전안심가이드</a></li>
+                            <li><a href="#">교통</a></li>
+                            <li><a href="#">의료기관</a></li>
+                            <li><a href="#">안내책사/관광지도</a></li>
+                            <li><a href="#">관광정보센터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="mainmenu">나의 여행</span>
+                        <ul class="submenu">
+                            <li><a href="#">나의 여행일정</a></li>
+                            <li><a href="#">찜한 여행</a></li>
+                            <li><a href="#">나의 리뷰</a></li>
+                            <li><a href="#">방문 여행지</a></li>
+                            <li><a href="#">정보수정</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 개인메뉴 -->
+            <div class="person">
+                <a href="#">
+                    <img src="./img/user_w.png" alt="로그인">
+                    <img src="./img/user_b.png" alt="로그인">
+                    로그인
+                </a>
+                <a href="#">
+                    <img src="./img/language_w (1).png" alt="language">
+                    <img src="./img/language_b.png" alt="language">
+                    한국어
+                </a>
+            </div>
+        </header>
+        
+        <!-- 비디오 -->
+        <section class="video">
+            <video src="./img/main_video.mp4" muted loop autoplay></video>
+        </section>
+
+        <!-- 관광지 -->
+        <section class="section1">
+            <div>
+                <h3 class="animate_left" style="text-transform: uppercase;">Tour</h3>
+                <p class="animate_right"></p>
+                <div class="s1_btn">
+                    <a class="btn-7" href="#">+ MORE</a>
+                </div>
+            </div>
+            <div class="center">
+                <p>추천관광지</p>
+                <div class="cols">
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background: url(./img/tourist/tourist1.png);">
+                                <div class="inner">
+                                    <p>성산일출봉</p>
+                                    <span>#일출 #오름 #경관/포토</span>
+                                </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                            <p>주소 : 제주특별자치도 서귀포시 성산읍 일출로 284-12</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background: url(./img/tourist/tourist2.png);">
+                                <div class="inner">
+                                    <p>우도</p>
+                                    <span>#섬속의섬 #경관/포토 #아이</span>
+                                </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                            <p>주소 : 제주특별자치도 제주시 우도면 삼양고수물길 1</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background: url(./img/tourist/tourist3.png);">
+                                <div class="inner">
+                                    <p>샤러니숲길</p>
+                                    <span>#숲길 #걷기/등산 #친구</span>
+                                </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                            <p>주소 : 제주특별자치도 제주시 조천읍 교래리 산 137-1</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background: url(./img/tourist/tourist4.png);">
+                                <div class="inner">
+                                    <p>카멜리아힐</p>
+                                    <span>#경관/포토 #커플 #아이</span>
+                                </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                            <p>주소 : 제주특별자치도 서귀포시 안덕면 병악로 166</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background: url(./img/tourist/tourist4.png);">
+                                <div class="inner">
+                                    <p>섭지코지</p>
+                                    <span>#일출 #해변 #경관/포토</span>
+                                </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                            <p>주소 : 제주특별자치도 서귀포시 성산읍 섭지코지로 107</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background: url(./img/tourist/tourist6.png);">
+                                <div class="inner">
+                                    <p>협재해수욕장</p>
+                                    <span>#일몰 #해수욕장 #액티비티</span>
+                                </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                            <p>주소 : 제주특별자치도 제주시 한림읍 한림로 329-10</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background: url(./img/tourist/tourist7.png);">
+                                <div class="inner">
+                                    <p>에코랜드 테마파크</p>
+                                    <span>#테마공원 #아이 #맑음</span>
+                                </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                            <p>주소 : 제주특별자치도 제주시 조천읍 번영로 1278-169</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background: url(./img/tourist/tourist8.png);">
+                                <div class="inner">
+                                    <p>천지연폭포</p>
+                                    <span>#폭포 #밤 #경관/포토</span>
+                                </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                            <p>주소 : 제주특별자치도 서귀포시 남성중로 2-15</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 축제 -->
+        <section class="section2">
+            <div>
+                <h3 class="animate_left" style="text-transform: uppercase;">festivals & events</h3>
+                <p class="animate_right"></p>
+                <div class="s2_btn">
+                    <a class="btn-7" href="./festival.html">+ MORE</a>
+                </div>
+            </div>
+            <div class="center">
+                <!-- 큰 이미지 텍스트 -->
+                <div class="s2_maincontent">
+                    <div class="s2_imgbox">
+                        <img src="./img/festivals/festival01.jpg" alt="축제이미지1" class="s2_img">
+                        <img src="./img/festivals/festival02.jpg" alt="축제이미지2" class="s2_img">
+                        <img src="./img/festivals/festival03.jpg" alt="축제이미지3" class="s2_img">
+                        <img src="./img/festivals/festival04.jpg" alt="축제이미지4" class="s2_img">
+                        <img src="./img/festivals/festival05.jpg" alt="축제이미지5" class="s2_img">
+                    </div>
+                    <div class="s2_textbox">
+                        <!-- 요기서부터 -->
+                        <div class="s2_text">
+                            <h4>빛의 벙커 '세잔,프로방스의빛/칸딘스키' 전</h4>
+                            <p>태양이 뜨는 마을, 성산에 숨겨져 있던 벙커가 제주의 색을 고스란히 닮은 빛의 갤러리로 변모했다.
+                                이곳은 국가 기간통신망을 운영하기 위한 해저 광케이블을 관리하던 약 900평 규모의 철근 콘크리트 건물이었다.
+                                사용 가치를 다해 잊혀가던 중 프랑스 몰입형 미디어아트 AMIEX를 활용할 수 있는 최적의 장소로 결정됐고,
+                                프랑스 외에 최초로 제주에서 선을 보이게 됐다.
+                                프로젝터를 통해 화려한 레이저 그래픽을 콘크리트 벽에 씌워 새로운 공간을 연출하는데,
+                                이번 전시는 현대미술의 아버지로 칭송받는 세잔과, 추상미술의 창시자 칸딘스키의 작품들이 벙커 내부를 가득 채운다.
+                                </p>
+                                <p>기간: 2022.11.04 ~ 2023.10.15</p>
+                                <p>주소: 제주특별자치도 서귀포시 성산읍 서성일로1168번길 89-17<br>
+                                    연락처: (+82) 1522-2653
+                                    홈페이지: http://www.bunkerdelumieres.com/</p>
+                        </div>
+                        <!-- 요기까지 -->
+                        <!-- 요기서부터 -->
+                        <div class="s2_text">
+                            <h4>친환경 그래비티 레이싱 : 23시즌 정규 라운드 개막</h4>
+                            <p>애월읍 평화로 인근에 위치한 9.81파크는 동력없이 중력의 힘만으로 레이싱을 즐길 수 있는 국내 최초의 그래비티 레이싱 테마파크다. 제주의 자연을 느끼며 레이싱을 즐기고 탑승기록과 영상까지 무료로 받을 수 있는 9.81파크의 대표 액티비티인 ‘레이스 981’의 2023년 시즌 X리그 정규 라운드가 개막했다.
+                            ‘레이스 981’ X리그는 9.81파크 10개의 레이스 트랙 중 X코스에서 진행되는 연중 레이스 경기로, 매 정규 라운드 상위 10위권에 진출한 레이서에게는 연말 챔피언십 GROC 대회에 도전할 수 있는 파이널리스트 진출권이 주어진다. 23년도 시즌은 1월 30일부터 시작해 총 10개의 라운드를 거쳐 100명의 최종 파이널리스트가 가려질 예정이며 연말 챔피언십 GROC 2023 은 2023년 12월 3일(일)에 개최된다.
+                                </p>
+                                <p>기간: 2023.01.30 ~ 2023.12.3</p>
+                                <p>주소: 제주특별자치도 제주시 애월읍 천덕로 880-24<br>
+                                    연락처: (+82) 064-1833-9810
+                                    홈페이지: http://www.981park.com</p>
+                        </div>
+                        <!-- 요기까지 -->
+                        <!-- 요기서부터 -->
+                        <div class="s2_text">
+                            <h4>제주 다이노스 어라이브</h4>
+                            <p>그동안 만나볼 수 없었던 거대한 스케일의 공룡 체험 전시<Dinos Alive>가 미국, 이스라엘, 벨기에를 거쳐 드디어 한국에 찾아왔다.
+                            중생대 생태와 공룡들의 멸종에 대한 스토리로 연출된 영상, 감각적인 미디어 아트가 공룡과 같이 연출되어 퀄리티 있는 비쥬얼 공간을 선보입니다. 실제 사이즈로 만들어진 80여가지의 공룡들과 최첨단 기술의 환상적인 조화! 직접 터치하고 체험하며 오감을 자극하는 인터랩티브한 경험! 눈앞에 살아 움직이는 거대한 공룡들이 선사하는 최상의 몰입감을 체혐하세요.
+                                </p>
+                                <p>기간: 상시운영 (주중/주말) 09:00~18:00</p>
+                                <p>주소: 제주특별자치도 서귀포시 안덕면 녹차분재로 218<br>
+                                    연락처: (+82) 514-2209
+                                    홈페이지: https://www.dinosalive.co.kr/</p>
+                        </div>
+                        <!-- 요기까지 -->
+                        <!-- 요기서부터 -->
+                        <div class="s2_text">
+                            <h4>제주도립미술관</h4>
+                            <p>제주도립미술관(JMOA, Jeju Museum of Art)은 2009년 개관 이래 제주 미술문화 발전에 기여하는 지역대표미술관으로 자리잡아 왔습니다. 제주도립미술관은 지역을 넘어 세계로 향하는 제주다운 미술관을 지향하기 위해 제주문화 정체성의 구현, 도민의 문화향수권 보호, 지역성과 국제성을 연계한 기획전시 및 문화프로그램 운영으로 지역 미술문화 발전에 이바지하며 도민 여러분께 한층 가까이 다가가는 친절한 미술관이 되고자 합니다.
+                            지역 미술사의 정립 및 국내외 현대미술의 흐름을 아우르며 자연 속에서 휴식을 제공하는 제주도립미술관은 미술관 본연의 기능인 전시, 교육, 수집, 보존, 연구와 같은 활동을 활발히 펼치며 다양한 문화예술 프로그램이 미술과 교감할 수 있는 복합문화공간으로 거듭 날 것입니다.
+                            문턱은 낮게, 프로그램의 질은 더욱 높게하여 방문하는 많은 분들이 다채로운 미술문화를 경험하시기를 기대하며, 제주지역 문화예술 발전에 기여할 수 있도록 정진할 것을 약속드립니다. 고맙습니다.
+                                </p>
+                                <p>기간: 상시운영 (주중/주말) 09:00~18:00</p>
+                                <p>주소: 제주특별자치도 제주시 1100로 2894-78 (연동)<br>
+                                    연락처: 064-710-4300
+                                    홈페이지: https://www.jeju.go.kr/</p>
+                        </div>
+                        <!-- 요기까지 -->
+                        <!-- 요기서부터 -->
+                        <div class="s2_text">
+                            <h4>제주 민속촌</h4>
+                            <p>민속은 민족의 얼이다. 시대와 환경에 적응하여 변화하면서 대대로 전승되는 생활 문화이다. 세월이 흐르면서 새로운 요소가 생성되거나 추가되고 또 때로는 부분적으로 소멸되기도 하지만 큰 줄기는 유지되는 것이다. 민속은 주민의 얼과 사상을 담은 구체적 생활 양상이며 기층 문화라 할 수 있을 것이다. 그런 의미에서 제주도민의 민속 문화를 간직하고 있는 제주민속촌은 제주에서 가장 제주다운 곳이라 할 수 있다. 제주민속촌은 조선말인 1890년대를 기준 연대로 삼아 제주 전래의 민속자료를 총체적으로 정리하여 전시하고 있다. 제주의 민속 문화가 제대로 보존되어 있으며, 우리의 꽃과 나무를 한눈에 보고, 세계 문화의 유사성과 차별성을 비교해 볼 수 있는 문화 공간이다.
+                                </p>
+                                <p>기간: 상시운영 (주중/주말) 09:00~18:00</p>
+                                <p>주소: 제주특별자치도 서귀포시 민속해안로 631-34<br>
+                                    연락처: 064-787-4501
+                                    홈페이지: https://jejufolk.com/</p>
+                        </div>
+                        <!-- 요기까지 -->
+                    </div>
+                </div> <!-- 큰 이지미 택스트 끝 -->
+                <!-- 탭버튼 작은 이미지 -->
+                <div class="s2_tapbox">
+                    <div class="s2_tapimg"><img src="./img/festivals/festival01.jpg" alt="축제이미지1" ></div>
+                    <div class="s2_tapimg"><img src="./img/festivals/festival02.jpg" alt="축제이미지2" ></div>
+                    <div class="s2_tapimg"><img src="./img/festivals/festival03.jpg" alt="축제이미지3" ></div>
+                    <div class="s2_tapimg"><img src="./img/festivals/festival04.jpg" alt="축제이미지4" ></div>
+                    <div class="s2_tapimg"><img src="./img/festivals/festival05.jpg" alt="축제이미지5" ></div>
+                </div>
+            </div>
+        </section>
+        
+                <!-- 축제 끝  -->
+
+                <!-- 숙박 -->
+        <section class="section3">
+            <div>
+                <h3 class="animate_left" style="text-transform: uppercase;">stay</h3>
+                <p class="animate_right"></p>
+                <div class="s3_btn">
+                    <a class="btn-7" href="./stay.html">+ MORE</a>
+                </div>
+            </div>
+            <div class="center">
+                <p>취향별 숙박 업소 찾기</p>
+                <!--취향별 업소착기 탭입니다~~ -->
+                <div class="s3_tapmenu">
+                    <ul>
+                        <li class="s3_tap s3_tap_click">호텔</li>
+                        <li class="s3_tap">민박</li>
+                        <li class="s3_tap">반려동물<br>동반입장</li>
+                        <li class="s3_tap">게스트<br>하우스</li>
+                        <li class="s3_tap">가족<br>호텔</li>
+                        <li class="s3_tap">착한<br>가격<br>업소</li>
+                    </ul>
+                </div>
+                <!--취향별 업소착기 탭입니다~~끝 -->
+                <!-- 숙박업소 이미지 -->
+                <div class="s3_contents">
+                    <!-- 길이를 길게 해 슬라이드로 이동 & opacity 로 슬며시 나오는 효과 -->
+                    <div class="s3_con_inner">
+                        
+                        <div class="s3_con_box"><!-- 첫번째 탭 content -->
+                            <div class="s3_content">
+                                <img src="./img/stay/hotel/stay_hotel1.png" alt="신라호텔">
+                                <div>
+                                    <h4>신라호텔제주</h4>
+                                    <p>주소 : 제주도 서귀포시 중문관광로 72번길 75</p>
+                                    <p>연락처 : 019-2358-5621</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/hotel/stay_hotel2.png" alt="더본호텔">
+                                <div>
+                                    <h4>더본호텔</h4>
+                                    <p>주소 : 제주도 서귀포시 색달로 18</p>
+                                    <p>연락처 : 010-5214-5421</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/hotel/stay_hotel3.png" alt="롯데호텔 제주">
+                                <div>
+                                    <h4>롯데호텔 제주</h4>
+                                    <p>주소 : 제주특별자치도 서귀포시 중문관광로72번길 35</p>
+                                    <p>연락처 : 064-774-5663</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/hotel/stay_hotel4.png" alt="해비치호텔앤드리조트">
+                                <div>
+                                    <h4>해비치호텔앤드리조트</h4>
+                                    <p>주소 : 제주특별자치도 서귀포시 표선면 민속해안로 537</p>
+                                    <p>연락처 : 064-713-7777</p>
+                                </div>
+                            </div>
+                        </div><!-- 탭 분류 -->
+                        <div class="s3_con_box"><!-- 첫번째 탭 content -->
+                            <div class="s3_content">
+                                <img src="./img/stay/motel/stay_motel1.png" alt="소풍">
+                                <div>
+                                    <h4>소풍(월정리)</h4>
+                                    <p>주소 : 제주특별자치도 제주시 구좌읍 월정1길 23</p>
+                                    <p>연락처 : 064-723-7123</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/motel/stay_motel2.png" alt="언덕위에 빨간지붕">
+                                <div>
+                                    <h4>언덕위에 빨간지붕</h4>
+                                    <p>주소 : 제주특별자치도 서귀포시 성산읍 난고로499번길 17</p>
+                                    <p>연락처 : 010-4352-3036</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/motel/stay_motel3.png" alt="위미모루왓">
+                                <div>
+                                    <h4>위미모루왓</h4>
+                                    <p>주소 : 제주특별자치도 서귀포시 남원읍 위미항구로 51(위미리)</p>
+                                    <p>연락처 : 064-764-7330</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/motel/stay_motel4.png" alt="다락마마">
+                                <div>
+                                    <h4>다락마마</h4>
+                                    <p>주소 : 제주특별자치도 제주시 구좌읍 상하도길 46-16</p>
+                                    <p>연락처 : 010-2358-5621</p>
+                                </div>
+                            </div>
+                        </div><!-- 탭 분류 -->
+                        <div class="s3_con_box"><!-- 첫번째 탭 content -->
+                            <div class="s3_content">
+                                <img src="./img/stay/companion animal/stay_animal1.png" alt="노소캄제주">
+                                <div>
+                                    <h4>노소캄제주</h4>
+                                    <p>주소 : 제주특별자치도 서귀포시 표선면 일주동로 6347-17</p>
+                                    <p>연락처 : 1588-4888</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/companion animal/stay_animal2.png" alt="블란디야">
+                                <div>
+                                    <h4>블란디야</h4>
+                                    <p>제주특별자치도 서귀포시 법환로 15</p>
+                                    <p>연락처 : 064-739-3346</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/companion animal/stay_animal3.png" alt="쉼멍스테이">
+                                <div>
+                                    <h4>쉼멍스테이</h4>
+                                    <p>제주특별자치도 서귀포시 대정읍 신영로 16-14</p>
+                                    <p>연락처 : 0507-1428-9999</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/companion animal/stay_animal4.png" alt="시루네펜션">
+                                <div>
+                                    <h4>시루네펜션</h4>
+                                    <p>제주특별자치도 서귀포시 검은여로 79</p>
+                                    <p>연락처 : 064- 1325-4214</p>
+                                </div>
+                            </div>
+                        </div><!-- 탭 분류 -->
+                        <div class="s3_con_box"><!-- 첫번째 탭 content -->
+                            <div class="s3_content">
+                                <img src="./img/stay/guest house/stay_guest1.png" alt="나날 게스트하우스">
+                                <div>
+                                    <h4>나날 게스트하우스</h4>
+                                    <p>제주특별자치도 서귀포시 남성중로121번길 14</p>
+                                    <p>연락처 : 010-2231-1009</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/guest house/stay_guest2.png" alt="제주dp게스트하우스">
+                                <div>
+                                    <h4>제주dp게스트하우스</h4>
+                                    <p>제주특별자치도 제주시 신대로17길 29</p>
+                                    <p>연락처 : 010-9283-7555</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/guest house/stay_guest3.png" alt="활엽수 게스트하우스">
+                                <div>
+                                    <h4>활엽수 게스트하우스</h4>
+                                    <p>제주특별자치도 서귀포시 상모대서로 20번길 44</p>
+                                    <p>연락처 : 010-9074-9589</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/guest house/stay_guest4.png" alt="꽃하루방게스트하우스">
+                                <div>
+                                    <h4>꽃하루방게스트하우스</h4>
+                                    <p>제주특별자치도 서귀포시 성산읍 은평포구로62번길 24</p>
+                                    <p>연락처 : 010-2105-8817</p>
+                                </div>
+                            </div>
+                        </div><!-- 탭 분류 -->
+                        <div class="s3_con_box"><!-- 첫번째 탭 content -->
+                            <div class="s3_content">
+                                <img src="./img/stay/family hotel/stay_family1.png" alt="아름다운리조트">
+                                <div>
+                                    <h4>아름다운리조트</h4>
+                                    <p>제주특별자치도 서귀포시 성산읍 해맞이해안로 2644</p>
+                                    <p>연락처 : 010-5114-9553</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/family hotel/stay_family2.png" alt="블루하와이리조트">
+                                <div>
+                                    <h4>블루하와이리조트</h4>
+                                    <p>제주도 제주시 한림읍 한림로 77</p>
+                                    <p>연락처 : 064-773-0800</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/family hotel/stay_family3.png" alt="제주 메이 더 호텔 카라반빌리지">
+                                <div>
+                                    <h4>제주 메이 더 호텔 카라반빌리지</h4>
+                                    <p>제주특별자치도 서귀포시 일주동로 1626</p>
+                                    <p>연락처 : 064-766-8888</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/family hotel/stay_family4.png" alt="수앤수가족호텔">
+                                <div>
+                                    <h4>수앤수가족호텔</h4>
+                                    <p>제주특별자치도 애월읍 부릉수길 60</p>
+                                    <p>연락처 : 064-799-7090</p>
+                                </div>
+                            </div>
+                        </div><!-- 탭 분류 -->
+                        <div class="s3_con_box"><!-- 첫번째 탭 content -->
+                            <div class="s3_content">
+                                <img src="./img/stay/good price/stay_price1.png" alt="바다해호텔">
+                                <div>
+                                    <h4>바다해호텔</h4>
+                                    <p>제주도 서귀포시 천지연로 3-1</p>
+                                    <p>연락처 : 064-762-5300</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/good price/stay_price2.png" alt="바다풍경펜션">
+                                <div>
+                                    <h4>바다풍경펜션</h4>
+                                    <p>제주도 제주시 애월읍 애월해안로 923</p>
+                                    <p>연락처 : 064-711-0808</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/good price/stay_price3.png" alt="제주 에코 스위츠 펜션">
+                                <div>
+                                    <h4>제주 에코 스위츠 펜션</h4>
+                                    <p>제주특별자치도 서귀포시 중문상로 207-13</p>
+                                    <p>연락처 : 064-738-7706</p>
+                                </div>
+                            </div>
+                            <div class="s3_content">
+                                <img src="./img/stay/good price/stay_price4.png" alt="장원민박">
+                                <div>
+                                    <h4>장원민박</h4>
+                                    <p>제주특별자치도 서귀포시 천제연로 49</p>
+                                    <p>연락처 : 064-738-1110</p>
+                                </div>
+                            </div>
+                        </div><!-- 탭 분류 -->
+                    </div>
+                </div>
+            </div>
+        </section>                <!-- 숙박업소 이미지 끝-->
+
+        <!-- 음식 -->
+        <section class="section4">
+            <div>
+                <h3 class="animate_left" style="text-transform: uppercase;">food</h3>
+                <p class="animate_right"></p>
+                <div class="s4_btn">
+                    <a class="btn-7" href="./프론트 프로젝트/index.html">+ MORE</a>
+                </div>
+            </div>
+            <!-- <p>제주도 음식 소개 및 음식점 찾기</p> -->
+            <!-- <div class="s4_sns">
+                <div>
+                    <img src="./img/language_b.png" alt="인스타이미지">
+                    <img src="./img/language_b.png" alt="인스타이미지">
+                </div>
+            </div> -->
+            <div class="center">
+                <div class="s4_youtube_box">
+                    <div class="s4_youtube_inner">
+                        <div class="s4_youtube">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vv-s9Ysvcpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="s4_youtube"> <iframe width="560" height="315" src="https://www.youtube.com/embed/uG7MQoWovPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                        <div class="s4_youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/M81oj0PkD6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+                <div class="s4_sns_tap">
+                    <ul>
+                        <li class="s4_tap_over">▶ 제주도 유명 레스토랑 방문 영상</li>
+                        <li class="s4_tap_over">▶ 제주도 음식점 탐방하기</li>
+                        <li class="s4_tap_over">▶ 제주도 카페 탐방하기</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        
+        
+        <footer>
+            <div>
+                <div>
+                    <div><img src="./img/logoWhite.png" alt="푸터로고"></div>
+                    <div>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">틀린정보신고</a>
+                        <a href="#">제주관광문의</a>
+                        <a href="#">제주관광사진이용</a>
+                    </div>
+                </div>
+                <div>
+                    <p>(63122) 제주특별자치도 제주시 선덕로 23(연동) 제주웰컴센터<br>
+                        관광문의 : 제주관광공사Tel : 064-740-6000~1FAX : 064-740-6090사업자등록번호 : 616-82-21432<br>
+                        관광불편신고 : 제주안내 120콜센터(국번없이 120번)</p>
+                </div>
+            </div>
+        </footer>
+    </div><!-- wrap -->
+
+
+
+
+
+    <!-- 축제 탭메뉴 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        $('.s2_tapimg').on('click',function(){
+            let s2Num = $(this).index();
+            // console.log(s2Num);
+            for(i = 0; i < $('.s2_tapimg').length; i++){
+                $('.s2_img').eq(i).css('opacity', '0')
+                $('.s2_text').eq(i).css('opacity', '0')
+            }
+            $('.s2_img').eq(s2Num).css('opacity', '1')
+            $('.s2_text').eq(s2Num).css('opacity', '1')
+        })
+    </script>
+    <!--숙박 제이쿼리 -->
+    <script>
+        $('.s3_con_box').eq(0).css('filter', 'brightness(1)')
+        $('.s3_tap').on('click',function(){
+            let s3Num = $(this).index();
+            $('.s3_tap').removeClass('s3_tap_click')
+            $('.s3_con_box').css({'transform':'translateX(-'+s3Num*73.958+'vw)'})
+            $('.s3_con_box').css('filter', 'brightness(0.2)')
+            $('.s3_tap').eq(s3Num).addClass('s3_tap_click')
+            $('.s3_con_box').eq(s3Num).css('filter', 'brightness(1)')
+
+
+        })
+    </script>
+    <script>
+        $('.s4_tap_over').on('mouseover',function(){
+            let s4Num = $(this).index()
+            
+            $('.s4_youtube_inner').css({'transform':'translateX(-'+s4Num*48+'vw'});
+        })
+    </script>
+
+
+
+
+
+    <!-- 스크롤 내릴때 메뉴 색 바꾸는 기능 -->
+    <script>
+        window.addEventListener('scroll', function(){
+            let hd = document.getElementById('hd');
+            let scrollY = window.scrollY
+            // console.log(window.scrollY);
+            if (scrollY > 10){
+                hd.classList.add('colorchange');
+            }else if(scrollY < 10){
+                hd.classList.remove('colorchange');
+            }
+
+        });
+
+    </script>
+</body>
+</html>

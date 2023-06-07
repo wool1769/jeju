@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="icon" href="./img/favicon.png">
+
+    <!-- second slide -->
+    <link rel="stylesheet" href="./css/stay.css" />
+    <script src="https://unpkg.com/flipping@1.1.0/dist/flipping.web.js"></script>
+    <script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
+
+    <!-- swiper slide -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header id="hd" class="hd">
+      <h1>
+        <a href="./index.html">
+          <img src="./img/logoBlack.png" alt="메인로고" class="logoBlack" />
+        </a>
+      </h1>
+      <!-- 메안메뉴-->
+      <nav class="gnb">
+        <ul>
+          <li>
+            <span class="mainmenu">여행지</span>
+            <ul class="submenu" onmouseover="position()">
+              <li><a href="#">관광지</a></li>
+              <li><a href="./프론트 프로젝트/index.html">음식</a></li>
+              <li><a href="./stay.html">숙박</a></li>
+              <li><a href="#">쇼핑</a></li>
+              <li><a href="./festival.html">축제와 행사</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="mainmenu">추천</span>
+            <ul class="submenu">
+              <li><a href="#">테마지도</a></li>
+              <li><a href="#">테마여행</a></li>
+              <li><a href="#">반려동물동반여행</a></li>
+              <li><a href="#">여행 큐레이션</a></li>
+              <li><a href="#">일정 추천</a></li>
+              <li><a href="#">슬로우로드</a></li>
+              <li><a href="#">관광지혼잡도</a></li>
+              <li><a href="#">제주문화공연</a></li>
+              <li><a href="#">관광기념품</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="mainmenu">쇼핑</span>
+            <ul class="submenu">
+              <li><a href="#">면세점</a></li>
+              <li><a href="#">탐나오</a></li>
+              <li><a href="#">이제주몰</a></li>
+              <li><a href="#">Deals</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="mainmenu">브랜드</span>
+            <ul class="submenu">
+              <li><a href="#">유네스코</a></li>
+              <li><a href="#">웰니스</a></li>
+              <li><a href="#">같이가치</a></li>
+              <li><a href="#">카름스테이</a></li>
+              <li><a href="#">우수관광사업체</a></li>
+              <li><a href="#">착한가격업소</a></li>
+              <li><a href="#">지오브랜드</a></li>
+              <li><a href="#">JTO X 제주지니</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="mainmenu">여행정보</span>
+            <ul class="submenu">
+              <li><a href="#">문화·역사·예술</a></li>
+              <li><a href="#">영상 속 제주</a></li>
+              <li><a href="#">VR로 보는 제주</a></li>
+              <li><a href="#">안전안심가이드</a></li>
+              <li><a href="#">교통</a></li>
+              <li><a href="#">의료기관</a></li>
+              <li><a href="#">안내책사/관광지도</a></li>
+              <li><a href="#">관광정보센터</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="mainmenu">나의 여행</span>
+            <ul class="submenu">
+              <li><a href="#">나의 여행일정</a></li>
+              <li><a href="#">찜한 여행</a></li>
+              <li><a href="#">나의 리뷰</a></li>
+              <li><a href="#">방문 여행지</a></li>
+              <li><a href="#">정보수정</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- 개인메뉴 -->
+      <div class="person">
+        <a href="#">
+          <img src="./img/user_w.png" alt="로그인" />
+          <img src="./img/user_b.png" alt="로그인" />
+          로그인
+        </a>
+        <a href="#">
+          <img src="./img/language_w (1).png" alt="language" />
+          <img src="./img/language_b.png" alt="language" />
+          한국어
+        </a>
+      </div>
+    </header>
+    <section class="sec1">
+      <div class="sec1main">
+        <!-- <h4>STAY</h4> -->
+        <img src="./img/stay_sub/BACKGROUND.png" alt="mainimage" />
+        <!-- 1920*801.73 -->
+      </div>
+      <div class="sec1_contents">
+        <div class="sec1_box1">
+          <div class="sec1select">
+            <p>예약 가능 업체 확인</p>
+            <select class="form-select">
+              <option selected>--- 숙소를 선택하세요 ---</option>
+              <option class="stay1" value="1">나미송 머무는 곳</option>
+              <option class="stay2" value="2">해비치호텔앤드리조트</option>
+              <option class="stay3" value="3">신라호텔 제주</option>
+              <option class="stay4" value="4">롯데호텔 제주</option>
+              <option class="stay5" value="5">제주도푸른바다</option>
+            </select>
+          </div>
+        </div>
+        <div class="sec1_box2">
+          <div class="sec1_select1">
+            <p>CHECK IN</p>
+            <input type="datetime-local" />
+          </div>
+          <div class="sec1_select2">
+            <p>CHECK OUT</p>
+            <input type="datetime-local" />
+          </div>
+          <div class="sec1_select3">
+            <input type="button" value="검색" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sec2 alls">
+      <div class="sec2_sub">
+        <p>FAMOUS</p>
+        <div class="icons">
+          <div class="sec_icons"><a href="#"><img src="./img/stay_sub/icon/ico_app_sns.png" alt="공유" class="smallicons" /></a></div>
+          <div class="sec_icons"><a href="#"><img src="./img/stay_sub/icon/ico_app_zzim.png" alt="찜하기" class="smallicons" /></a></div>
+          <div class="sec_icons"><a href="#"><img src="./img/stay_sub/icon/ico_app_back.png" alt="방문했어요" class="smallicons" /></a></div>
+          <div class="sec_icons"><a href="#"><img src="./img/stay_sub/icon/ico_app_hits.png" alt="조회" class="smallicons" /></a></div>
+          <div class="sec_icons"><a href="#"><img src="./img/stay_sub/icon/ico_app_review.png" alt="리뷰" class="smallicons" /></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec3 alls">
+          <div class="sec3_cont1">
+            <div class="sec3img_1 sec3img">
+              <div class="front1 item"><img src="./img/stay_sub/sec5/namisong.jpg" alt="나미송머무는곳" /></div>
+              <div class="back1 item"><img src="./img/stay_sub/sec5/namisong_back.jpg" alt="나미송머무는곳정원" /></div>
+              <a href="#"><button class="click_btn">click me!</button></a>
+            </div>
+            <div class="sec3img_2 sec3img">
+              <div class="front2 item"><img src="./img/stay_sub/sec5/haevichi.jpg" alt="해비치호텔앤리조트" /></div>
+              <div class="back2 item"><img src="./img/stay_sub/sec5/haevichi_back.jpg" alt="해비치호텔앤리조트로비" /></div>
+              <a href="#"><button class="click_btn">click me!</button></a>
+            </div>
+          </div>
+                <div class="sec3_cont2">
+                  <div class="sec3img_3 sec3img">
+                            <div class="front3 item"><img src="./img/stay_sub/sec5/daemyungresort.jpg" alt="대명리조트 제주" /></div>
+                            <div class="back3 item"><img src="./img/stay_sub/sec5/daemyungresort_back.jpg" alt="대명리조트 제주 객실" /></div>
+                            <a href="#"><button class="click_btn">click me!</button></a>
+                  </div>
+                  <div class="sec3img_4 sec3img">
+                            <div class="front4 item"><img src="./img/stay_sub/sec5/kal.jpg" alt="서귀포 KAL호텔" /></div>
+                            <div class="back4 item"><img src="./img/stay_sub/sec5/kal_back.jpg" alt="서귀포 KAL호텔 바비큐" /></div>
+                            <a href="#"><button class="click_btn">click me!</button></a>
+                  </div>
+                </div>
+    </section>
+
+
+    <section class="sec4 alls">
+      <h2 class="hidden">slider</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide pic1"><a href="#"><img src="./img/stay_sub/sec3/slide1-1.png" alt="slider"></a></div>
+          <div class="swiper-slide pic2"><a href="#"><img src="./img/stay_sub/sec3/slide1-2.png" alt="slider"></a></div>
+          <div class="swiper-slide pic3"><a href="#"><img src="./img/stay_sub/sec3/slide1-3.png" alt="slider"></a></div>
+          <div class="swiper-slide pic4"><a href="#"><img src="./img/stay_sub/sec3/slide1-4.png" alt="slider"></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec5 alls">
+      <div id="app" data-state="0">
+        <div class="ui-big-images">
+          <div class="ui-big-image" data-key="0">
+            <img src="./img/stay_sub/sec2_slide/ramadapriza.png" alt="라마다프라자 제주 호텔" />
+          </div>
+          <div class="ui-big-image" data-key="1">
+            <img src="./img/stay_sub/sec2_slide/resort2.jpg" alt="히든클리프 호텔 앤 네이쳐" />
+          </div>
+          <div class="ui-big-image" data-key="2">
+            <img src="./img/stay_sub/sec2_slide/resort3.jpg"" alt="롯데시티호텔제주" />
+          </div>
+          <div class="ui-big-image" data-key="3">
+            <img src="./img/stay_sub/sec2_slide/resort4.jpg"" alt="마레보 리조트" />
+          </div>
+          <div class="ui-big-image" data-key="4">
+            <img src="./img/stay_sub/sec2_slide/resort5.jpg"" alt="르페도라" />
+          </div>
+          <div class="ui-big-image" data-key="5">
+            <img src="./img/stay_sub/sec2_slide/resort6.jpg"" alt="오션스위츠호텔 제주" />
+          </div>
+        </div>
+        <div class="ui-thumbnails">
+          <div class="ui-thumbnail" tabindex="-1" data-key="0">
+            <img src="./img/stay_sub/sec2_slide/ramadapriza_thum.png" alt="라마다프라자 제주 호텔" />
+            <div class="ui-cuticle" data-flip-key="cuticle"></div>
+          </div>
+          <div class="ui-thumbnail" tabindex="-1" data-key="1">
+            <img src="./img/stay_sub/sec2_slide/resort2_thum.jpg" alt="히든클리프 호텔 앤 네이쳐" />
+            <div class="ui-cuticle" data-flip-key="cuticle"></div>
+          </div>
+          <div class="ui-thumbnail" tabindex="-1" data-key="2">
+            <img src="./img/stay_sub/sec2_slide/resort3_thum.jpg" alt="롯데시티호텔제주" />
+            <div class="ui-cuticle" data-flip-key="cuticle"></div>
+          </div>
+          <div class="ui-thumbnail" tabindex="-1" data-key="3">
+            <img src="./img/stay_sub/sec2_slide/resort4_thum.jpg" alt="마레보 리조트" />
+            <div class="ui-cuticle" data-flip-key="cuticle"></div>
+          </div>
+          <div class="ui-thumbnail" tabindex="-1" data-key="4">
+            <img src="./img/stay_sub/sec2_slide/resort5_thum.jpg" alt="르페도라" />
+            <div class="ui-cuticle" data-flip-key="cuticle"></div>
+          </div>
+          <div class="ui-thumbnail" tabindex="-1" data-key="5">
+            <img src="./img/stay_sub/sec2_slide/resort6_thum.jpg" alt="오션스위츠호텔 제주" />
+            <div class="ui-cuticle" data-flip-key="cuticle"></div>
+          </div>
+        </div>
+        <div class="ui-content">
+          <nav class="ui-nav">
+            <button id="prev" tabindex="-1" title="Previous">&lt;</button>
+            <button id="next" tabindex="-1" title="Next">&gt;</button>
+          </nav>
+          <div class="ui-articles">
+            <article class="ui-article" data-key="0">
+              <h2 class="ui-heading">라마다프라자 제주 호텔</h2>
+              <p class="ui-paragraph">#5성급호텔 #숙소 #호텔 #수영장 #해변 #공공와이파이존</p>
+            </article>
+            <article class="ui-article" data-key="1">
+              <h2 class="ui-heading">히든클리프 호텔 앤 네이쳐</h2>
+              <p class="ui-paragraph">#호텔 #수영장 #5성급호텔 #숙소 #해변 #관광호텔</p>
+            </article>
+            <article class="ui-article" data-key="2">
+              <h2 class="ui-heading">롯데시티호텔제주</h2>
+              <p class="ui-paragraph">#4성급호텔 #공공와이파이존 #제주시내 #호텔 #숙소</p>
+            </article>
+            <article class="ui-article" data-key="3">
+              <h2 class="ui-heading">마레보 리조트</h2>
+              <p class="ui-paragraph">#4성급호텔 #공공와이파이존 #제주시내 #호텔 #숙소 #수영장
+                #휴양콘도 #해안도로 #4성급호텔 #조식</p>
+            </article>
+            <article class="ui-article" data-key="4">
+              <h2 class="ui-heading">르페도라</h2>
+              <p class="ui-paragraph">#스파 #수영장 #공공와이파이존 #자연경관</p>
+            </article>
+            <article class="ui-article" data-key="5">
+              <h2 class="ui-heading">오션스위츠호텔 제주</h2>
+              <p class="ui-paragraph">#4성급호텔 #해변 #자연경관 #호텔 #환전</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <div>
+          <div><img src="./img/logoWhite.png" alt="푸터로고" /></div>
+          <div>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이용약관</a>
+            <a href="#">틀린정보신고</a>
+            <a href="#">제주관광문의</a>
+            <a href="#">제주관광사진이용</a>
+          </div>
+        </div>
+        <div>
+          <p>
+            (63122) 제주특별자치도 제주시 선덕로 23(연동) 제주웰컴센터<br />
+            관광문의 : 제주관광공사Tel : 064-740-6000~1FAX :
+            064-740-6090사업자등록번호 : 616-82-21432<br />
+            관광불편신고 : 제주안내 120콜센터(국번없이 120번)
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/stay_second_slide.js"></script>
+    <script src="./js/stay_swiper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@import url(./reset.css);
+
+@font-face {
+    font-family: NanumGothic;
+    src: url(../font/NanumGothic.woff);
+}
+@font-face {
+    font-family: JejuGothic;
+    src: url(../font/JejuGothic.woff);
+}
+.wrap *{font-family: JejuGothic }
+
+
+
+
+
+
+.wrap {display: flex;flex-direction: column; width: 100%;overflow: hidden;}
+
+
+
+.colorchange *{color: #444 !important;}
+header{width: 100%
+    ;height: 5.625vw;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 10px 1px;
+}
+header *{color: #444;}
+/* 로고영역 */
+header h1 {width: 8.802083333333333%; height: 1.875vw;margin-left: 2.65625%;}
+header h1 a{width: 100%;height: 100%;}
+header h1 a img {width: 100%;max-width: 100%;}
+header h1 a{position: relative;}
+header h1 a img{position: absolute;left: 0;opacity: 1;}
+
+/* 메인메뉴 */
+.gnb{ position: absolute;left: 35%;/*margin-left: 29.16666666666667%;*/align-self: flex-end;margin-bottom: 0; width: 55%;height: 100%; z-index: 90;}
+.gnb * {font-size: 1vw;}
+.gnb > ul{display: flex;height: 100%;display: flex;align-items: flex-end;}
+.gnb > ul > li{margin-right: 6.40625%;height: 40%;}
+.gnb > ul > li >.mainmenu{cursor: pointer; margin-bottom: 23.14814814814815%;position: relative;}
+
+.gnb > ul > li >.mainmenu::before{content: '';width: 0%;height: 0.104166666666667vw; position: absolute;bottom: -0.208333333333334vw;left: 0; background-color: #444;opacity: 0;transition: 0.3s;}
+
+.gnb > ul > li:hover .mainmenu::before{opacity: 1;width: 100%;}
+
+
+
+
+
+
+
+
+/* 서브메뉴 */
+.gnb > ul > li > .submenu{
+    background-color: #fff;
+    position: fixed;display: none;width: 100%;height: 5.625vw; left: 0;top: 5.625vw;justify-content: center; align-items: center;box-shadow: 0 4px 4px -4px black;}
+    .gnb > ul > li > .submenu li{margin-left: 2.864583333333333%;}
+    .gnb > ul > li > .submenu li a{position: relative;}
+    /* 서브메뉴 호버 */
+
+    .gnb > ul > li > .submenu li a::before{content: '';width: 0%;height: 0.104166666666667vw; position: absolute;bottom: -0.208333333333334vw;left: 0; background-color: #444;opacity: 0;transition: 0.3s;}
+    .gnb > ul > li > .submenu li a:hover:before {opacity: 1;width: 100%;}
+    
+    
+    
+    /* 호버 */
+    .gnb > ul > li:hover .submenu{
+        animation:  fade 0.4s ease-in-out;
+        display: flex
+    }
+    @keyframes fade{
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    /* 개인메뉴 */
+    .person {display: flex;align-self: flex-start;margin-right: 2.864583333333333%;margin-top: 0.9375vw;}
+    .person *{font-size: 0.8333333333333328vw;}
+    .person a {position: relative;}
+    .person a img {height: 0.8333333333333328vw; margin: 0 2px;}
+    .person a img:last-child {position: absolute;left: 0;opacity: 1;}
+    
+    /* 메인컨텐츠 */
+    #festival{width: 100%;height: 56.25vw;}
+    #festival h2{margin: 8vw 0 1vw 11.25%; font-size: 2vw;}
+    #festival > h3{margin: 3vw 0 1vw 11.25%; font-size: 1.2vw;font-family: NanumGothic;font-weight: bold;}
+    #festival hr {width: 78%;height: 0.15vw;background-color: rgba(136, 136, 136, 0.422);margin: 3vw auto 1vw ;border: 0;}
+    #season{display: flex;width: 79.2708333333333%;height: 39.5833333333333vw;margin: auto;justify-content: space-between;}
+    #season > div{width: 25%; height: 100%;position: relative;left: 0px;}
+    #season > div:nth-child(2){left: -0.444vw;}
+    #season > div:nth-child(3){left: calc(-0.444vw * 2);}
+    #season > div:nth-child(4){left: calc(-0.444vw * 3);}
+    #season > div > div {position: relative;width: 100%;height: 100%;}
+    #season > div > div img{position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0);width: 18.75vw;max-width: 18.75vw;transition: 0.4s;}
+    #season > div > div h3{position: absolute;top: 0px;left: 0px;font-size: 1.30208333333333vw;color: rgba(255, 255, 255, 0.5);margin: 2.29166666666667vw;transition: all 0.4s;}
+    #season > div > div div{position: absolute;margin: 12vw 2.29166666666667vw;font-size: 1.5625vw; opacity: 0;transition: 0.4s;}
+    #season > div > div div a{transition: all 0.3s; color: rgba(255, 255, 255, 0.3);margin-bottom: 3.22916666666667vw;}
+
+    /* 메인컨텐츠 호버 */
+    #season > div > div div a:hover{color: #fff; font-size: 2vw;}
+    #season > div:hover >div div{opacity: 1;}
+    #season > div:hover >div img{filter: brightness(50%);width: 100%;max-width: 100%;}
+    #season > div:hover div h3{color: #fff;font-size: 2.08333333333333vw;margin: 4vw 2.29166666666667vw;}
+
+
+    /* 모달 영역 */
+    #modalclose{width: 100%;height: 100%;}
+    .modal{width: 100vw;height: 56.25vw;background-color: rgba(0, 0, 0, 0.155);position: fixed;top: 0;z-index: 100;backdrop-filter: blur(2.5px);transition: 0.4s;display: none;}
+    .modalinner{width: 82.7604166666667%;height: 50vw;background-color: rgba(0, 0, 0, 0.600);border-radius: 15px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .close{position: absolute;right: 0;margin: 1.3%;width: 3vw;height: 3vw;}
+    .close img{width: 100%;max-width: 100%;cursor: pointer;border-radius: 50%;}
+    .close img:hover{background-color: #444;}
+    .btn{display: flex;justify-content: space-between;width: 74.4791666666667vw;position: relative;top: 50%;margin: auto;transform: translate(0, -50%);z-index: 500;}
+    .btn img {cursor: pointer;width: 1.45833333333333vw;height: 2.8125vw;}
+
+    .contentMonth{display: none;}
+
+    /* 슬라이드 */
+
+
+    /* 슬라이드 컨텐츠 */
+    .slider img {
+        height: 100%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .contents{width:65.4583333333333vw;overflow: hidden; display: flex;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .contents_box{display: flex; transition: 0.5s ease-in-out;}
+    .slider h2{position: absolute;
+        top: -6%;
+        left: -1%;
+        color: #fff;
+        font-size: 2vw !important;}
+    .content{width: 18vw;
+        border: 1px solid;
+        margin-left: 5.729166666666666vw;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+    .content:nth-child(1){margin-left: 0;}
+    .content div:first-child{ 
+        height: 20vw;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
+    }
+    .content div:last-child{
+        background-color: #fff !important;
+        height: 9vw;
+        border-radius: 0 0 15px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        padding: 5px;}
+    .content div:last-child h3{
+        font-size: 0.9375vw;
+    }
+    .content div:last-child p{
+        font-size: 0.729166666666667vw;
+    }
+
+    /* .nextmove .content {transform: translate(-46.74vh, 0);} */
+
+
+
+    /* 푸터영역 */
+
+    footer {
+        margin-top:  5vw;
+        width: 100%;
+        min-height: 6.354166666666667vw;
+        background-color: #444;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    footer * {
+        color: white;
+        font-size: 0.7291666666666667vw;
+        font-family: NanumGothic;
+    }
+    
+    footer>div {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        position: relative;
+        left: 6%;
+    }
+    
+    footer>div div {
+        width: 50%;
+    }
+    
+    footer>div div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer>div div:first-child img {
+        width: 8.802083333333333vw;
+        height: 1.875vw;
+        margin-left: 2.65625%;
+    }
+    
+    footer>div div:first-child div:last-child {
+        display: flex;
+        width: 150%;
+    }
+    
+    footer>div div:first-child div:last-child a::after {
+        content: '|';
+        margin: 3px;
+    }
+    
+    footer>div div:first-child div:last-child a:last-child:after {
+        content: '';
+    }
+    
+    footer>div div:last-child {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    footer p {
+        line-height: 20px;
+    }

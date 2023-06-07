@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url(./reset.css);
+
+@font-face {
+    font-family: NanumGothic;
+    src: url(../font/NanumGothic.woff);
+}
+@font-face {
+    font-family: JejuGothic;
+    src: url(../font/JejuGothic.woff);
+}
+.wrap *{font-family: JejuGothic }
+
+
+
+
+
+
+.wrap {display: flex;flex-direction: column;width: 100%;overflow: hidden;}
+
+
+
+.colorchange *{color: #444 !important;}
+header{width: 100%
+    ;height: 5.625vw;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 10px 1px;
+}
+header *{color: #444;}
+/* 로고영역 */
+header h1 {width: 8.802083333333333%; height: 1.875vw;margin-left: 2.65625%;}
+header h1 a{width: 100%;height: 100%;}
+header h1 a img {width: 100%;max-width: 100%;}
+header h1 a{position: relative;}
+header h1 a img{position: absolute;left: 0;opacity: 1;}
+
+/* 메인메뉴 */
+.gnb{ position: absolute;left: 35%;/*margin-left: 29.16666666666667%;*/align-self: flex-end;margin-bottom: 0; width: 55%;height: 100%; z-index: 90;}
+.gnb * {font-size: 1vw;}
+.gnb > ul{display: flex;height: 100%;display: flex;align-items: flex-end;}
+.gnb > ul > li{margin-right: 6.40625%;height: 40%;}
+.gnb > ul > li >.mainmenu{cursor: pointer; margin-bottom: 23.14814814814815%;position: relative;}
+
+.gnb > ul > li >.mainmenu::before{content: '';width: 0%;height: 0.104166666666667vw; position: absolute;bottom: -0.208333333333334vw;left: 0; background-color: #444;opacity: 0;transition: 0.3s;}
+
+.gnb > ul > li:hover .mainmenu::before{opacity: 1;width: 100%;}
+
+
+
+
+
+
+
+
+/* 서브메뉴 */
+.gnb > ul > li > .submenu{
+    background-color: #fff;
+    position: fixed;display: none;width: 100%;height: 5.625vw; left: 0;top: 5.625vw;justify-content: center; align-items: center;box-shadow: 0 4px 4px -4px black;}
+    .gnb > ul > li > .submenu li{margin-left: 2.864583333333333%;}
+    .gnb > ul > li > .submenu li a{position: relative;}
+    /* 서브메뉴 호버 */
+
+    .gnb > ul > li > .submenu li a::before{content: '';width: 0%;height: 0.104166666666667vw; position: absolute;bottom: -0.208333333333334vw;left: 0; background-color: #444;opacity: 0;transition: 0.3s;}
+    .gnb > ul > li > .submenu li a:hover:before {opacity: 1;width: 100%;}
+    
+    
+    
+    /* 호버 */
+    .gnb > ul > li:hover .submenu{
+        animation:  fade 0.4s ease-in-out;
+        display: flex
+    }
+    @keyframes fade{
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    /* 개인메뉴 */
+    .person {display: flex;align-self: flex-start;margin-right: 2.864583333333333%;margin-top: 0.9375vw;}
+    .person *{font-size: 0.8333333333333328vw;}
+    .person a {position: relative;}
+    .person a img {height: 0.8333333333333328vw; margin: 0 2px;}
+    .person a img:last-child {position: absolute;left: 0;opacity: 1;}
+
+
+
+
+/* 섹션 사이즈 */
+.section_size {width: 100%;height: 56.25vw;}
+/* 서ß브 타이틀 */
+.subtitle{width: 0%;height: 4.21875vw; position: absolute;background: url(../img/subtitlebg.png);margin-top: 9.94791666666667vw;overflow: hidden; transition: 1s;}
+.subTitleAni{width: 100%;}
+.subtitle div{font-size: 1.82291666666667vw;position: relative;top: 50%;transform: translate(0, -50%);left: 10%;}
+/* 컨텐츠 중앙 */
+.center {width: 80%; height: 100%;margin: auto; }
+
+/* 비디오 */
+.video video{height: 100%;}
+
+/* 푸터영역 */
+
+footer {
+    width: 100%;
+    min-height: 6.354166666666667vw;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer * {
+    color: white;
+    font-size: 0.7291666666666667vw;
+    font-family: NanumGothic;
+}
+
+footer>div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    left: 6%;
+}
+
+footer>div div {
+    width: 50%;
+}
+
+footer>div div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer>div div:first-child img {
+    width: 8.802083333333333vw;
+    height: 1.875vw;
+    margin-left: 2.65625%;
+}
+
+footer>div div:first-child div:last-child {
+    display: flex;
+    width: 150%;
+}
+
+footer>div div:first-child div:last-child a::after {
+    content: '|';
+    margin: 3px;
+}
+
+footer>div div:first-child div:last-child a:last-child:after {
+    content: '';
+}
+
+footer>div div:last-child {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    line-height: 20px;
+}

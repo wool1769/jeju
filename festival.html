@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIT JEJU</title>
+    <link rel="stylesheet" href="./css/festival.css">
+    <link rel="icon" href="./img/favicon.png">
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- 헤더영역 -->
+        <header id="hd" class="hd">
+            <h1>
+                <a href="./index.html">
+                    <img src="./img/logoBlack.png" alt="메인로고" class="logoBlack">
+                </a>
+            </h1>
+            <!-- 메안메뉴-->
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <span class="mainmenu">여행지</span>
+                        <ul class="submenu" onmouseover="position()">
+                            <li><a href="#">관광지</a></li>
+                            <li><a href="./프론트 프로젝트/index.html">음식</a></li>
+                            <li><a href="./stay.html">숙박</a></li>
+                            <li><a href="#">쇼핑</a></li>
+                            <li><a href="./festival.html">축제와 행사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="mainmenu">추천</span>
+                        <ul class="submenu">
+                            <li><a href="#">테마지도</a></li>
+                            <li><a href="#">테마여행</a></li>
+                            <li><a href="#">반려동물동반여행</a></li>
+                            <li><a href="#">여행 큐레이션</a></li>
+                            <li><a href="#">일정 추천</a></li>
+                            <li><a href="#">슬로우로드</a></li>
+                            <li><a href="#">관광지혼잡도</a></li>
+                            <li><a href="#">제주문화공연</a></li>
+                            <li><a href="#">관광기념품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="mainmenu">쇼핑</span>
+                        <ul class="submenu">
+                            <li><a href="#">면세점</a></li>
+                            <li><a href="#">탐나오</a></li>
+                            <li><a href="#">이제주몰</a></li>
+                            <li><a href="#">Deals</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="mainmenu">브랜드</span>
+                        <ul class="submenu">
+                            <li><a href="#">유네스코</a></li>
+                            <li><a href="#">웰니스</a></li>
+                            <li><a href="#">같이가치</a></li>
+                            <li><a href="#">카름스테이</a></li>
+                            <li><a href="#">우수관광사업체</a></li>
+                            <li><a href="#">착한가격업소</a></li>
+                            <li><a href="#">지오브랜드</a></li>
+                            <li><a href="#">JTO X 제주지니</a></li>
+                        </ul>
+                    <li>
+                        <span class="mainmenu">여행정보</span>
+                        <ul class="submenu">
+                            <li><a href="#">문화·역사·예술</a></li>
+                            <li><a href="#">영상 속 제주</a></li>
+                            <li><a href="#">VR로 보는 제주</a></li>
+                            <li><a href="#">안전안심가이드</a></li>
+                            <li><a href="#">교통</a></li>
+                            <li><a href="#">의료기관</a></li>
+                            <li><a href="#">안내책사/관광지도</a></li>
+                            <li><a href="#">관광정보센터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="mainmenu">나의 여행</span>
+                        <ul class="submenu">
+                            <li><a href="#">나의 여행일정</a></li>
+                            <li><a href="#">찜한 여행</a></li>
+                            <li><a href="#">나의 리뷰</a></li>
+                            <li><a href="#">방문 여행지</a></li>
+                            <li><a href="#">정보수정</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 개인메뉴 -->
+            <div class="person">
+                <a href="#">
+                    <img src="./img/user_b.png" alt="로그인">
+                    <img src="./img/user_b.png" alt="로그인">
+                    로그인
+                </a>
+                <a href="#">
+                    <img src="./img/language_w (1).png" alt="language">
+                    <img src="./img/language_b.png" alt="language">
+                    한국어
+                </a>
+            </div>
+        </header>
+
+
+
+        <section id="festival">
+            <h2>축제와 행사</h2>
+            <h3>제주 어디까지 가보셨어요? 수많은 제주의 축제와 행사를 취향에 맞게 선택해 보자. 제주의 보석 같은 사계절의 여행지가 여러분의 선택을 기다립니다.</h3>
+            <hr>
+            <div id="season">
+                <div id="SPRING">
+                    <div class="menubox">
+                        <img src="./img/festival_sub/SPRING.png" alt="봄배경">
+                        <h3>SPRING</h3>
+                        <div>
+                            <a href="#" id="0" onclick="monthClick(this)">March</a>
+                            <a href="#" id="1" onclick="monthClick(this)">April</a>
+                            <a href="#" id="2" onclick="monthClick(this)">May</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="SUMMER">
+                    <div class="menubox">
+                        <img src="./img/festival_sub/SUMMER.png" alt="봄배경">
+                        <h3>SUMMER</h3>
+                        <div>
+                            <a href="#" id="3" onclick="monthClick(this)">June</a>
+                            <a href="#" id="4" onclick="monthClick(this)">July</a>
+                            <a href="#" id="5" onclick="monthClick(this)">August</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="FALL">
+                    <div class="menubox">
+                        <img src="./img/festival_sub/FALL.png" alt="봄배경">
+                        <h3>FALL</h3>
+                        <div>
+                            <a href="#" id="6" onclick="monthClick(this)">September</a>
+                            <a href="#" id="7" onclick="monthClick(this)">October</a>
+                            <a href="#" id="8" onclick="monthClick(this)">November</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="WINTER">
+                    <div class="menubox">
+                        <img src="./img/festival_sub/WINTER.png" alt="봄배경">
+                        <h3>WINTER</h3>
+                        <div>
+                            <a href="#" id="9" onclick="monthClick(this)">December</a>
+                            <a href="#" id="10" onclick="monthClick(this)">January</a>
+                            <a href="#" id="11" onclick="monthClick(this)">February</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 모달 -->
+
+            <div id="modal" class="modal">
+                <div id="modalclose"></div>
+                <div id="modalinner" class="modalinner">
+                    <div id="close" class="close">
+                        <img src="./img/festival_sub/slideimage/close.png" alt="close">
+                    </div>
+                    <div class="btn">
+                        <img src="./img/festival_sub/slideimage/prev.png" alt="prev" id="prev" onclick="prevBtn(this)">
+                        <img src="./img/festival_sub/slideimage/next.png" alt="next" id="next" onclick="nextBtn(this)">
+                    </div>
+                    
+                    <section class="slider">
+                        <!-- 3월~~ -->
+                        <div id="contentMarch" class="contentMonth">
+                            <h2>March</h2>
+                            <!-- 컨텐츠 -->
+                            <div class="contents">
+                                <div class="contents_box">
+                                    <div class="content"><a href="#">
+                                        <div><img src="./img/festival_sub/slideimage/festival01.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>빛의 벙커 '세잔,프로방스의빛/칸딘스키' 전</h3>
+                                            <p>성산에 숨겨져 있던 통신 벙커에서 열리는 고흐 중심의 미디어 아트 전시</p>
+                                            <p>축제기간 : 2022.11.04 ~ 2023.10.15</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="./img/festival_sub/slideimage/festival02.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>친환경 그래비티 레이싱 : 23시즌 정규 라운드(9.81파크)</h3>
+                                            <p>동력없이 중력의 힘만으로 레이싱을 즐길 수 있는 국내 최초의 그래비티 레이싱 테마파크인 9.81파크의 대표 액티비티인 ‘레이스 981’의 2023년 시즌 X리그 정규 라운드</p>
+                                            <p>축제기간 : 2023.01.30 ~ 2023.11.05</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="./img/festival_sub/slideimage/festival03.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제주 다이노스 어라이브 &lt;JEJU DINOS ALIVE&gt;</h3>
+                                            <p>살아 움직이는 초대형 공룡 체험전</p>
+                                            <p>축제기간 : 2022.08.10 ~ 2023.08.09</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="./img/festival_sub/slideimage/festival04.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>2022 제3회 제주비엔날레  《움직이는 달, 다가서는 땅》</h3>
+                                            <p>제주에서 진행되는 국제비엔날레</p>
+                                            <p>축제기간 : 2022.11.16 ~ 2023.02.12</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="./img/festival_sub/slideimage/festival05.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제주민속촌 몬딱 놀당갑 SHOW</h3>
+                                            <p>친근하고 유쾌한 제주민속촌을 만나 보실 수 있는 “몬딱 놀당갑Show"</p>
+                                            <p>축제기간 : 2023.01.21 ~ 2023.02.19</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="./img/festival_sub/slideimage/festival06.jpeg" alt="1"></div>
+                                        <div>
+                                            <h3>한림공원 수선화축제</h3>
+                                            <p>한림공원 수선화 정원에는 겨우내 피어난 100만 송이에 달하는 금잔옥대 수선화와 제주수선화 축제가 진행된다.</p>
+                                            <p>축제기간 : 2022.11.11 ~ 2023.03.31</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="./img/festival_sub/slideimage/festival7.jpeg" alt="1"></div>
+                                        <div>
+                                            <h3>휴애리 유채꽃 축제</h3>
+                                            <p>정성스럽게 키운 유채꽃을 공원 곳곳에서 감상할 수 있는 축제</p>
+                                            <p>축제기간 : 2023.01.01 ~ 2023.02.28</p>
+                                        </div>
+                                    </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4월~~ -->
+                        <div id="contentMarch" class="contentMonth">
+                            <h2>March</h2>
+                            <!-- 컨텐츠 -->
+                            <div class="contents">
+                                <div class="contents_box">
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202204/18/e86e6d5d-de1c-4436-95ab-7d2732cedcc4.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>마노르블랑 수국축제</h3>
+                                            <p>"수국축제의 향연, 전세계 30여종 7천여본 수국들을 만나다 "</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201904/09/79a32a3b-417a-471c-8665-addbf651d6e7.JPG" alt="1"></div>
+                                        <div>
+                                            <h3>탐라문화콘서트 - 놀젠놀장</h3>
+                                            <p>인기 뮤지션 공연과 플리마켓, 관객들과 함께하는 라디오 공개방송, 매주 토요일 밤엔 탐라문화광장에서 놀자!</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201903/28/bdc57a77-614b-4e88-9352-0c10796b9507.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>우도소라축제</h3>
+                                            <p>우도 특산물인 뿔소라를 주제로 다양한 시식 및 체험 행사를 진행, 마음까지 풍성한 축제</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202103/25/3bd78f34-666f-4f0d-b634-3ebe3e0d446e.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제주허브동산 꽃잔디 축제</h3>
+                                            <p>표선면 제주허브동산에서 열리는 꽃잔디 축제로, 4월 한 달 동안 허브동산 전체를 진분홍색으로 물들인 꽃잔디를 만날 수 있다.</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/df8fbdb0-3d54-44f7-b794-97cf70e8ae28.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제주 오라 청보리 &amp; 유채꽃 축제</h3>
+                                            <p>청보리의 푸르름과 노란 유채꽃을 한눈에 감상할 수 있는 축제.</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/66fcaaad-4573-470b-a1fe-d3a61bc1f3fb.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>한라산청정고사리축제</h3>
+                                            <p>생명이 움트는 청정 남원읍의 자연과 함께 즐기는 한라산청정 고사리 축제</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202203/23/32c71e40-7651-4c4a-83df-ad6218634dc1.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>세계자동차&amp;피아노박물관 4th 봄날의 향연 뮤지엄콘서트</h3>
+                                            <p>세계자동차&amp;피아노박물관 로비 따뜻한 봄날에 즐기는 국내 유일 오리지널 하프시코드와 함께하는 렉처 콘서트</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/ba72b917-fec3-4c99-8009-c5124f5b64e5.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>에코파티</h3>
+                                            <p>마을 주민들이 꾸리고 초대하는 생태관광 테마파티.</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202204/12/ea6ce492-6706-434f-a538-ee40ca345cc8.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>상효원수목원 봄꽃축제</h3>
+                                            <p>서귀포시에 위치한 약8만여평 규모의 상효원수목원을 가득 메운 다양한 봄꽃과 푸릇한 나무들을 만날 수 있는 행사</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202204/04/69626851-3d87-430f-b43b-fc57fbdfe62c.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>반려식물과 함께하는 4월의 스누피 가든</h3>
+                                            <p>코로나에 지친 사람들을 위로하기 위해 스누피 가든 박물관과 2만5천평의 정원 곳곳에서 반려식물과 함께하는 다양한 이벤트와 특별 전시</p>
+                                            <p>예정(종료) [매년 4월 중]</p>
+                                        </div>
+                                    </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4월끝~~~ -->
+                        <!-- 5월~~ -->
+                        <div id="contentMarch" class="contentMonth">
+                            <h2>March</h2>
+                            <!-- 컨텐츠 -->
+                            <div class="contents">
+                                <div class="contents_box">
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/90273b83-94cb-4657-b753-1b6c47dc8d7a.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>보롬왓 축제</h3>
+                                            <p>딤스로켓, 화이트핑크셀렉스, 메밀, 보리, 라벤더 사색 이야기의 향연</p>
+                                            <p>예정(종료) [매년 5월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/d65b466d-4759-4413-90fe-79f44934bcf8.png" alt="1"></div>
+                                        <div>
+                                            <h3>방선문축제</h3>
+                                            <p>신선이 머무는 곳</p>
+                                            <p>예정(종료) [매년 5월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201905/08/17393551-d0cc-4eb0-89b5-2b4c5d000f89.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>설문대할망 페스티벌(제주돌문화공원)</h3>
+                                            <p>창조성과 자조성, 모성애의 화신이 된 위대한 설문대할망을 기리는 행사</p>
+                                            <p>예정(종료) [매년 5월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202205/09/06b9a86e-d27e-4cd3-947d-0cb893b7ace5.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제주국제트래블마트</h3>
+                                            <p>코로나 위기속 국제관광의 재개를 위해 국내외 110여개 관광사업체가 참여하는 대형트래블마트</p>
+                                            <p>예정(종료) [매년 5월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202205/06/02c209df-f644-4e4c-a08f-7f9c7d37a74e.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>PRESENT OF JEJU, 스누피가든 5월 EVENT</h3>
+                                            <p>가정의 달을 맞아 온가족이 함께할 수 있는 다양한 이벤트와 특별 전시</p>
+                                            <p>예정(종료) [매년 5월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202205/02/a7d7a14d-7207-4d17-95cc-6d890a00f79c.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>2022 세계지질공원 수월봉 트레일</h3>
+                                            <p>지질트레일을 즐기며 새로운 지질자원과 풍경을 즐길 수 있는 행사.</p>
+                                            <p>예정(종료) [매년 5월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201903/27/93e479e9-615d-4176-9596-6be58c2281fa.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제9회 국제전기자동차엑스포</h3>
+                                            <p>세계 유일의 순수 전기차 엑스포</p>
+                                            <p>예정(종료) [매년 5월 중]</p>
+                                        </div>
+                                    </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5월끝~~~ -->
+                        <!-- 6월~~ -->
+                        <div id="contentMarch" class="contentMonth">
+                            <h2>March</h2>
+                            <!-- 컨텐츠 -->
+                            <div class="contents">
+                                <div class="contents_box">
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201904/12/f3f3761d-7609-4c30-bd80-6f5b3a666eda.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>2022 청수 곶자왈 반딧불이 축제</h3>
+                                            <p>별 흐르는 마을 청수리에서 개최되는 곶자왈 반딧불이 축제</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202204/26/52069d36-b190-4f89-b545-1e6b1978856e.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>2022 제주 요가 페스티벌</h3>
+                                            <p>2022년 8회 유엔 세계 요가의 날을 기념하여 전쟁으로 고통 받고 있는 우크라이나를 돕기 위한 요가 프로젝트를 평화의 섬 제주에서 개최합니다.</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202206/03/e7fd67b5-2caa-4f13-a749-44f82c7d727f.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>세상에 이런(E-RUN) 트립</h3>
+                                            <p>‘제로를 외쳐봐, 세상에 E-RUN 트립’ 제로탄소! 제로플라스틱! 제로일회용품! 쓰레기 없는 여행을 떠나요!</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202206/07/33892a63-089a-4349-b534-f9aa38c87232.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>숲에서 살아나는 스트릿댄스(제2회 웰니스 숲힐링 축제)</h3>
+                                            <p>편백나무가 울창한 치유의 숲에서 스트릿댄서 '히든트랙'과 함께 숲이 살아나고 자신이 살아나는 특별한 경험을 해보자!</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202007/14/3ea1d24b-d11d-4d5c-97a3-6e76cd397dad.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>2022 서귀포문화재 야행</h3>
+                                            <p>제주의 여름 밤. 서귀포문화재 일원을 찬찬히 걸으며 문화를 향유하는 서귀포문화재 야행이 8월 1일과 2일 서귀포시 일대에서 개최된다.</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202206/07/b97d3aaa-2d17-431d-8ac0-029591209b6f.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>2022 제3회 제주 일노래 상설공연</h3>
+                                            <p>제주의 진솔한 모습을 만날 수 있는 음악 축제</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202206/07/0b0324c5-8c56-4af6-a149-c3a0293f5766.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>한개의 별을 노래하자(제2회 웰니스 숲힐링 축제)</h3>
+                                            <p>여름이 찾아오는 게절, 밤숲에서 하루동안 비박하며 내 안으로 여행을 떠난다</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202206/07/33b02b0f-94e7-435e-b454-e471615916ad.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>치유의숲 [바라]봄! [돌]봄! 환경수호대(제2회 웰니스 숲힐링 축제)</h3>
+                                            <p>산림휴양해설사와 숲길체험, 지역예술인들과 환경체험! 환경수호대와 함께 숲을 지켜가자!</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202205/16/c12e4c64-d4cb-46d6-9f15-cd6979a1b53b.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>2022 세계인제주 외국인 커뮤니티 제전</h3>
+                                            <p>제주에 거주하는 외국인들에게 ‘제주人’이라는 자긍심 고취시킬 수 있는 행사</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202206/03/697613e2-970a-4457-a1c3-5289e239d013.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제26회 제주국제관광마라톤축제</h3>
+                                            <p>제주의 파란 바닷빛과 함께 천혜의 자연 에너지를 만끽할 수 있는 “제주국제관광마라톤축제”</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202205/25/2f7083cc-72ef-4216-a8f9-289f307db738.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>웰니스 숲멍때리기 대회(제2회 웰니스 숲힐링 축제)</h3>
+                                            <p>아침에 눈을 떠서부터 잠들기까지 온라인인 당신에게 오프라인의 시간을 선사하기 위한 대회</p>
+                                            <p>축제 일정 : 2021년 6월 1일 ~ 8월 31일</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202105/24/1f3cb092-eac7-440e-9f1a-d6f50e3c8f4a.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제주허브동산 수국축제</h3>
+                                            <p>아침에 눈을 떠서부터 잠들기까지 온라인인 당신에게 오프라인의 시간을 선사하기 위한 대회</p>
+                                            <p>예정(종료) [매년 6월 중]</p>
+                                        </div>
+                                    </a></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 6월끝~~~ -->
+                        <!-- 7월~~ -->
+                        <div id="contentMarch" class="contentMonth">
+                            <h2>March</h2>
+                            <!-- 컨텐츠 -->
+                            <div class="contents">
+                                <div class="contents_box">
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202206/23/71e2deac-ed17-484e-ae96-cc0460dd6d17.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>삼다공원 야간콘서트</h3>
+                                            <p>금요일 밤, 제주 도심 속 작은 공원을 가득 채우는 다채로운 공연</p>
+                                            <p>예정(종료) [매년 7월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202206/23/7fb0deb8-0173-4408-aeb3-dcfddef7fc16.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>981 SUNSET MOVIE</h3>
+                                            <p>아름다운 애월의 노을과 인생영화를 함께 만나볼 수 있는 기회!</p>
+                                            <p>예정(종료) [매년 7월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/201907/02/383b8df7-a14b-45cc-baef-13c0cf659463.jpeg" alt="1"></div>
+                                        <div>
+                                            <h3>예래생태체험축제</h3>
+                                            <p>생태의 보고 예래에서 즐기는 친환경적인 축제.</p>
+                                            <p>예정(종료) [매년 7월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202006/25/4be776d3-123e-40e4-87b9-576d0dba366d.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제주식품대전</h3>
+                                            <p>천혜의 자연환경을 자랑하는 청정 제주의 다채로운 식품과 새로운 식품 트렌드를 한 자리에서 만날 수 있는 행사</p>
+                                            <p>예정(종료) [매년 7월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202207/29/4f447b7b-1a96-4f99-86ff-a0006d3a50cf.JPG" alt="1"></div>
+                                        <div>
+                                            <h3>새연교 콘서트</h3>
+                                            <p>서귀포 새연교에서의 색다른 밤!</p>
+                                            <p>예정(종료) [매년 7월 중]</p>
+                                        </div>
+                                    </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 7월끝~~~ -->
+                        <!-- 8월~~ -->
+                        <div id="contentMarch" class="contentMonth">
+                            <h2>March</h2>
+                            <!-- 컨텐츠 -->
+                            <div class="contents">
+                                <div class="contents_box">
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202208/24/873fc077-6b27-498f-b9e7-293d64154b3b.png" alt="1"></div>
+                                        <div>
+                                            <h3>Miracle 365 아이스버킷 챌린지 RUN IN JEJU</h3>
+                                            <p>플로깅 RUN, 아이스버킷챌린지 , 애프터 콘서트 : 션, 양동근, 이정, 비지, 천재, 이승국</p>
+                                            <p>예정(종료) [매년 8월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202207/14/7eabd8ca-cd5e-4610-8f49-76e9dc456553.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>제주국제크루즈포럼</h3>
+                                            <p>“포스트 코로나, 아시아 크루즈산업의 대전환” 전세계 크루즈 산업 관계 기관 및 업체</p>
+                                            <p>예정(종료) [매년 8월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202111/12/00a359fa-f608-4edc-9834-0fe3d4a116cf.jpg" alt="1"></div>
+                                        <div>
+                                            <h3>아트제주</h3>
+                                            <p>제주 최대 규모의 국제 아트페어 아트제주</p>
+                                            <p>예정(종료) [매년 8월 중]</p>
+                                        </div>
+                                    </a></div>
+                                    <div class="content"><a href="#">
+                                        <div><img src="https://api.cdn.visitjeju.net/photomng/thumbnailpath/202212/15/fd463831-d767-4276-8cb3-0f3ac8e4f6c3.JPG" alt="1"></div>
+                                        <div>
+                                            <h3>2022 컬러풀산지</h3>
+                                            <p>코로나19 장기화로 침체된 탐라문화광장 일대를 환하게 밝혀 활력을 불어넣기 위한 비대면 경관조성 사업</p>
+                                            <p>예정(종료) [매년 8월 중]</p>
+                                        </div>
+                                    </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 8월끝~~~ -->
+            
+                    </section>
+
+                </div>
+
+            </div>
+        </section>
+
+        
+        
+        <footer>
+            <div>
+                <div>
+                    <div><img src="./img/logoWhite.png" alt="푸터로고"></div>
+                    <div>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">틀린정보신고</a>
+                        <a href="#">제주관광문의</a>
+                        <a href="#">제주관광사진이용</a>
+                    </div>
+                </div>
+                <div>
+                    <p>(63122) 제주특별자치도 제주시 선덕로 23(연동) 제주웰컴센터<br>
+                        관광문의 : 제주관광공사Tel : 064-740-6000~1FAX : 064-740-6090사업자등록번호 : 616-82-21432<br>
+                        관광불편신고 : 제주안내 120콜센터(국번없이 120번)</p>
+                </div>
+            </div>
+        </footer>
+    </div><!-- wrap -->
+
+    <script src="./js/festival.js"></script>
+</body>
+</html>
